@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+    .dropdown_st {
+    background-color: black;
+    }
+
+    .sidebar {
+      background-color: black;
+      color: white;
+      padding: 5px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .border_top {
+    margin-top: 20px;
+    }
+
+    .border_bottom {
+    margin-top: 450px;
+    }
+
+    .block {
+    margin: auto;
+    width: fit-content;
+    padding: 15px;
+    text-align: center
+    }
+
+    .card_param {
+      width: 20rem;
+      margin-top: 20px;
+      margin-left: 50px
+    }
+</style>
+<body>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-2 sidebar">
+
+            <div class="d-flex p-2">Меню</div>
+            <hr class="border-2 border_top"/>
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">
+                  <a class="btn btn-primary" href="main.html" role="button">Главная</a>
+                </div>
+                <div class="p-2">
+                  <button type="button" class="btn btn-outline-light">Категории</button>
+                </div>
+               <div class="p-2">
+                  <button type="button" class="btn btn-outline-light">Заказы</button>
+                </div>
+                <div class="p-2">
+                  <button type="button" class="btn btn-outline-light">Контакты</button>
+               </div>
+            </div>
+            <hr class="border-2 border_bottom"/>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown_st" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Пользователь
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-10">
+
+            <div class="row">
+                <h1 style="margin-top: 100px; text-align: center">Главная</h1>
+            </div>
+
+            <div class="row">
+                <h6 style="color: grey; text-align: center">Вы находитесь на сайте, предназначенном для продажи товаров.</h6>
+            </div>
+
+            <div class="row block">
+
+                <div class="col-4">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2 class="card-title">100 $</h2>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-4">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2 class="card-title">100 $</h2>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2 class="card-title">100 $</h2>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
