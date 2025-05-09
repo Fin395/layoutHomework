@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+    <style>
+        .dropdown_st {
+        background-color: black;
+        }
+
+        .sidebar {
+          background-color: black;
+          color: white;
+          padding: 5px;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .border_top {
+        margin-top: 20px;
+        }
+
+        .border_bottom {
+        margin-top: 450px;
+        }
+
+    </style>
+<body>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-2 sidebar">
+
+            <div class="d-flex p-2">Меню</div>
+            <hr class="border-2 border_top"/>
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">
+                  <a class="btn btn-outline-light" href="main.html" role="button" >Главная</a>
+                </div>
+                <div class="p-2">
+                  <a class="btn btn-outline-light" href="catalog.html" role="button">Категории</a>
+                </div>
+               <div class="p-2">
+                  <a class="btn btn-outline-light" href="category.html" role="button">Заказы</a>
+                </div>
+                <div class="p-2">
+                  <a class="btn btn-primary" href="contacts.html" role="button">Контакты</a>
+               </div>
+            </div>
+            <hr class="border-2 border_bottom"/>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown_st" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Пользователь
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-10">
+
+            <div class="row">
+                <h1 style="margin-top: 100px; text-align: center">Контакты</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="row mt-5">
+                        <div class="col-5" style="padding: 20px">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="Имя" class="form-label">Имя</label>
+                                            <input type="text" class="form-control" id="Имя">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Почта" class="form-label">Почта</label>
+                                            <div class="input-group flex-nowrap">
+                                              <span class="input-group-text" id="Почта">@</span>
+                                              <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Сообщение" class="form-label">Сообщение</label>
+                                            <textarea class="form-control" id="Сообщение" rows="3"></textarea>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6" style="padding: 20px; margin-left: 40px">
+                            <h4>Наши контакты</h4>
+                            Google Contacts originated as the built-in contacts manager in Gmail, which was introduced in 2007.
+                            It was later released as an Android app for Nexus devices in 2010, before it became available for all Android phones in 2015.
+                            <p style="margin-top: 10px">Standalone web application was released the same year, featuring a revamped user interface.
+                                It returned to Gmail in the form of a sidebar in 2020 as part of Google Workspace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
